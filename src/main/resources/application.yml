@@ -1,1 +1,23 @@
+server:
+  servlet:
+    context-path: /produdoro/api
+    
+springdoc:
+  swagger-ui:
+    path: /public/swagger
+    
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_DB_URI:mongodb+srv://vastiane:UF6FlPFzXg371QSC@cluster0.jh5wppb.mongodb.net/MyFirstDataBase?retryWrites=true&w=majority}
+      auto-index-creation: true
+      authentication-database: admin
+      
+      
 
+
+    
+    
+
+    
+   
