@@ -25,6 +25,37 @@ public class Projeto {
 	private String descricao;
 	@Indexed
 	private UUID idArea;
+	public UUID getIdProjeto() {
+		return idProjeto;
+	}
+	public void setIdProjeto(UUID idProjeto) {
+		this.idProjeto = idProjeto;
+	}
+	public UUID getIdUsuario() {
+		return idUsuario;
+	}
+	public void setIdUsuario(UUID idUsuario) {
+		this.idUsuario = idUsuario;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public UUID getIdArea() {
+		return idArea;
+	}
+	public void setIdArea(UUID idArea) {
+		this.idArea = idArea;
+	}
+	
 	
 	
 	

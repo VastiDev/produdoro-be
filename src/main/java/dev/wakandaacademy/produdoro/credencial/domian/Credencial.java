@@ -17,13 +17,13 @@ public class Credencial {
 	@MongoId(targetType = FieldType.STRING)
 	@Getter
 	private String usuario;
-	private BCryptPasswordEncoder senha;
+	private String senha;
 	public Credencial(String usuario, String senha) {
 		super();
 		this.usuario = usuario;
-		this.senha = new BCryptPasswordEncoder();
+		this.senha = new BCryptPasswordEncoder().encode(senha);
 	}
-	public BCryptPasswordEncoder getPassword() {
+	public String getPassword() {
 		return senha;
 	}
 }
